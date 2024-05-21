@@ -1,16 +1,15 @@
 <?php
 include('conn.php');
+session_start();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anatomy AMS | تسجيل الدخول</title>
 </head>
-
 <body lang="ar">
     <div class="container">
         <div class="main-title">
@@ -18,7 +17,7 @@ include('conn.php');
         </div>
         <?php
         if (isset($_GET["error"]) && $_GET["error"] == 1) {
-            echo '<p style="font-size: 26px; color:red;font-weight: 600;">اسم المستخدم او كلمة السر خاطئ</p>';
+            echo '<p style="font-size: 26px; color:red;font-weight: 600;">اسم المستخدم أو كلمة السر خاطئة</p>';
         }
         ?>
         <div class="main-links">
@@ -36,5 +35,4 @@ include('conn.php');
         </div>
     </div>
 </body>
-
 </html>

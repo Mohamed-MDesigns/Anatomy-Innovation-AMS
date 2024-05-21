@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "simple_attendance_db";
+$database = "anatomy-attendance-managment-system";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
